@@ -10,7 +10,6 @@ import {deviceWidth, deviceHeight, isIPhoneXPaddTop, isIPhoneXFooter, isIPhoneX,
 import BaseComponent from './src/components/BaseComponent';
 import ContainerView from './src/components/ContainerView';
 import Line from './src/components/Line';
-import ListCell from './src/components/ListCell';
 import ListEditCell from './src/components/ListEditCell';
 import MineBuuton from './src/components/MineButton';
 import GraphicValidate from './src/components/GraphicValidate';
@@ -31,7 +30,6 @@ export default {
   ContainerView,
   Line,
   ListEditCell,
-  ListCell,
   MineBuuton,
   GraphicValidate,
   Loading,
