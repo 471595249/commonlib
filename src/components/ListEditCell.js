@@ -96,7 +96,7 @@ export default class ListEditCell extends Component{
 
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
               {functionView}
-              <Image source={require('../../img/kf_mine/mine_arrow.png')} style={{width: size(14), height: size(24), marginRight: size(57)}}/>
+              <Image source={require('../img/mine_arrow.png')} style={{width: size(14), height: size(24), marginRight: size(57)}}/>
             </View>
           </View>
           <Line color='rgba(231,231,231,1)' left={lineLeft} right={lineRight}/>
