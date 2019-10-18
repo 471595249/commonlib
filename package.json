@@ -1,17 +1,29 @@
 {
   "name": "react-native-vesal-commonlib",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.2",
+  "description": "some components and tool for vesal react-native project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "react-native"
-  ],
-  "author": "",
-  "license": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/471595249/commonlib.git"
+  },
+  "devDependencies": {
+    "react": "^16.5.0",
+    "react-native": "^0.57.0"
+  },
   "peerDependencies": {
-    "react-native": "^0.41.2"
-  }
+    "react": "^16.5.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0"
+  },
+  "keywords": [
+    "react-native",
+    "react-native-vesal-commonlib"
+  ],
+  "author": "radioactive_code xzh",
+  "license": ""
 }
