@@ -34,7 +34,9 @@ export default class NavBar extends Component {
                     if (this.props.gobackAction) {
                       this.props.gobackAction();
                     } else {
+                      if (this.props.navigation) {
                         this.props.navigation.pop()
+                      }
                     }
                   }}>
                     <Image style={styles.imgNav} source={leftImage}/>

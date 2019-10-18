@@ -121,7 +121,7 @@ export default class SelectDialog extends Component {
     let arr = [];
     let currValue = this.state.current;
     let type = this.state.type;
-    this.state.data.forEach((item) => {
+    this.state.data.forEach((item, index) => {
 
       let isSelect = false;
       if (type == 'Mutilple') { // 多选
@@ -132,7 +132,7 @@ export default class SelectDialog extends Component {
       }
 
       arr.push(
-        <TouchableOpacity activeOpacity={1} onPress={() => {this.selectItem(item, type)}}>
+        <TouchableOpacity key={index} activeOpacity={1} onPress={() => {this.selectItem(item, type)}}>
           <View style={{width: '100%', height: size(80)}}>
             <View style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', flex: 1}}>
               <Text style={{fontSize: size(28), color: 'rgba(38, 38, 38, 1)', marginLeft: size(20)}}>

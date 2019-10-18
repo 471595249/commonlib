@@ -11,7 +11,7 @@
 
 import React, {Component} from 'react';
 import Loading from './Loading';
-// import Toast from 'react-native-easy-toast';
+import Toast from 'react-native-easy-toast';
 import SelectDialog from './SelectDialog';
 import {View, StyleSheet} from "react-native";
 import PropTypes  from "prop-types";
@@ -21,7 +21,7 @@ let that = null;
 export default class ContainerView extends Component {
 
   static propTypes = {
-    children: PropTypes.element
+    children: PropTypes.array
   }
 
   constructor(props) {
@@ -48,7 +48,7 @@ export default class ContainerView extends Component {
   }
 
   _toast(content) {
-    // this.refs.toast.show(content);
+    this.refs.toast.show(content);
   }
 
   _showSelectDialog(name, list, type, title) {
@@ -84,14 +84,14 @@ export default class ContainerView extends Component {
           name={this.state.selectDialogName}
           selectDialogAction={(result) => {this.recieveDialogResult(result)}}
         />
-        {/*<Toast*/}
-          {/*ref="toast"*/}
-          {/*position="top"*/}
-          {/*positionValue={200}*/}
-          {/*fadeInDuration={750}*/}
-          {/*fadeOutDuration={1000}*/}
-          {/*opacity={0.8}*/}
-        {/*/>*/}
+        <Toast
+        ref="toast"
+        position="top"
+        positionValue={200}
+        fadeInDuration={750}
+        fadeOutDuration={1000}
+        opacity={0.8}
+        />
         <Loading
           ref={r => {
             this.Loading = r;

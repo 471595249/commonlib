@@ -18,7 +18,7 @@ import NavBar from './src/components/NavBar';
 import NullData from './src/components/NullData';
 import ImageMapper from './src/components/ImageMapper';
 
-export default {
+module.exports = {
   deviceWidth,
   deviceHeight,
   isIPhoneXPaddTop,

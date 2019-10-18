@@ -1,7 +1,7 @@
 
 /**
  * 调用说明：
- * <Loading ref={r=>{this.Loading = r}} hide = {true} /> //放在布局的最后即可
+ * <Loading ref={r=>{this.Loading = r}} /> //放在布局的最后即可
  * 在需要显示的地方调用this.Loading.show();
  * 在需要隐藏的地方调用this.Loading.close();
  */
@@ -48,20 +48,20 @@ export default class Loading extends Component {
         }
         let title = this.props.title
         return (
-            <View style={styles.LoadingPage}>
-                <View style={{
-                    width: 100,
-                    height: 100,
-                    backgroundColor: "rgba(0,0,0,0.5)",
-                    opacity: 1,
-                    justifyContent: "center",
-                    alignItems: "center",
-                    borderRadius: 7
-                }}>
-                    <ActivityIndicator size="large" color="#FFF"/>
-                    <Text style={{marginLeft: 10, color: "#FFF", marginTop: 10}}>{this.state.title}</Text>
-                </View>
-            </View>
+          <View style={styles.LoadingPage}>
+              <View style={{
+                  width: 100,
+                  height: 100,
+                  backgroundColor: "rgba(0,0,0,0.5)",
+                  opacity: 1,
+                  justifyContent: "center",
+                  alignItems: "center",
+                  borderRadius: 7
+              }}>
+                  <ActivityIndicator size="large" color="#FFF"/>
+                  <Text style={{marginLeft: 10, color: "#FFF", marginTop: 10}}>{this.state.title}</Text>
+              </View>
+          </View>
         );
     }
 }
@@ -77,6 +77,3 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
 });
-Loading.PropTypes = {
-    hide: PropTypes.bool.isRequired,
-};
