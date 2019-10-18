@@ -1,6 +1,6 @@
 {
   "name": "react-native-vesal-commonlib",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "some components and tool for vesal react-native project",
   "main": "index.js",
   "scripts": {
